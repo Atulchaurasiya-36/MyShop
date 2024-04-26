@@ -59,33 +59,44 @@ nav {
     width: 100%;
     margin-top: 30px;
 }
-.div-img{
-    width: 100%;
+/* CSS */
+.div-img {
+    width: 100%; 
     display: flex;
-    justify-content: space-evenly;
-}
-.div-img1 img{
-    height: 70%;
-    /* padding: 20px  20px; */
-    border: 1 px solid white;
-    border-radius: 20px;
-}
-.div-img1 p{
-    padding-left: 25px;
-    font-size: 1.2rem;
-    color: #333333;
-    margin-bottom: 10px;
-}
-.div-img1 .sp{
-    padding-left:5% ;
-    padding-right: 5%;
-    margin-left: 20px;
-    margin-top: 10px;
-    background-color: #008526;
-    color: #ffffff;
-    height: 40px;
-}
-
+    justify-content: space-evenly; 
+    margin-bottom: 30px;
+  }
+  
+  .div-img1 {
+    max-width:40%; /* Constrain the maximum width to avoid overflow */
+    height: 90%; /* Fit within parent constraints */
+    border: 1px solid white; /* Solid border */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+    padding: 20px; /* Uniform padding for consistent spacing */
+    text-align: center; /* Center text within the div */
+  }
+  
+  .div-img1 img {
+    max-height: 500px; /* Ensure the image doesn't cause overflow */
+    object-fit: cover; /* Prevent distortion, crop to fit */
+    width: 100%; /* Allow the image to take the full width */
+  }
+  
+  .div-img1 p {
+    font-size: 1.2rem; /* Larger text for better readability */
+    color: #333333; /* Dark gray text */
+    margin-top: 10px; /* Space above the paragraph */
+  }
+  
+  .div-img1 .sp {
+    background-color: #008526; /* Green background for contrast */
+    color: #ffffff; /* White text for better visibility */
+    padding: 10px 20px; /* Padding for inner spacing */
+    border-radius: 5px; /* Rounded corners for the span */
+    display: inline-block; /* Keep the span inline but able to have padding */
+  }
+  
 #view{
     margin-left: 20px;
     height: 40px;
@@ -110,4 +121,26 @@ nav {
 
 .womens1{
     display: none;
+}
+
+/* men's Section */
+
+.man{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #c0b9b9;
+}
+
+.mens1{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+   padding-left: 7%;   
+}
+.men1-img1 img{
+    height: 70%;
+    border: 1 px solid white;
+    border-radius: 20px;
+
 }
